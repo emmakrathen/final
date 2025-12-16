@@ -1,0 +1,259 @@
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+  color: #111;
+  line-height: 1.65;
+}
+
+.article-body,
+.article-header,
+.hero-photo-banner,
+.sources-section {
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-headline {
+  font-size: 46px;
+  line-height: 1.1;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+.subhead {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 18px;
+  max-width: 520px;
+}
+
+.byline {
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0;
+}
+
+.pub-date {
+  font-size: 14px;
+  color: #666;
+}
+
+.article-header::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #ddd;
+  margin-top: 22px;
+}
+
+.article-body p {
+  font-size: 20px;
+  margin: 26px 0;
+  color: #111;
+}
+
+.lead::first-letter {
+  float: left;
+  font-size: 64px;
+  line-height: 0.85;
+  padding-right: 8px;
+  padding-top: 4px;
+  font-weight: bold;
+}
+
+.section-head {
+  margin-top: 50px;
+  margin-bottom: 14px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #222;
+}
+
+.hero-photo-banner img {
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.photo-caption {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+  margin-top: 6px;
+}
+
+.article-body img:not([src*="datawrapper"]) {
+  width: 60%;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+.image-grid.two-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: start;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.image-grid.two-grid figure {
+  max-width: 460px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.image-grid.two-grid figure img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  display: block;
+}
+
+.image-grid.two-grid figcaption {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #555;
+  text-align: center;
+}
+
+.image-grid.three-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 30px;
+  margin: 50px 0;
+}
+
+.image-grid.three-grid figure {
+  margin: 0;
+  max-width: 300px;
+  text-align: center;
+}
+
+.image-grid.three-grid figure img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.image-grid.three-grid figcaption {
+  font-size: 15px;
+  margin-top: 8px;
+  color: #555;
+  text-align: center;
+}
+
+.pull-quote {
+  font-size: 26px;
+  font-style: italic;
+  line-height: 1.3;
+  margin: 40px auto;
+  padding-left: 20px;
+  border-left: 3px solid #111;
+  max-width: 500px;
+  color: #333;
+}
+
+.pull-quote-source {
+  text-align: right;
+  font-size: 15px;
+  color: #555;
+  margin-top: 6px;
+}
+
+.chart-block {
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
+  padding: 25px;
+  margin: 40px 0;
+  border-radius: 4px;
+}
+
+.chart-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.chart-chatter {
+  font-size: 15px;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 14px;
+}
+
+.source-line {
+  font-size: 13px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.side-by-side {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+  margin: 40px 0;
+}
+
+.side-by-side p {
+  font-size: 18px;
+}
+
+.footnotes {
+  margin-top: 60px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.footnotes p {
+  font-size: 14px;
+  color: #444;
+  margin: 10px 0;
+}
+
+.site-footer {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+
+.site-footer p {
+  margin: 6px 0;
+}
+
+@media (max-width: 740px) {
+  .main-headline {
+    font-size: 34px;
+  }
+
+  .article-body p {
+    font-size: 18px;
+  }
+
+  .pull-quote {
+    font-size: 22px;
+  }
+
+  .image-grid.two-grid figure img {
+    height: 150px;
+  }
+}
